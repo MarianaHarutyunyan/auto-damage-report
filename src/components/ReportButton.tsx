@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
-interface RapportoButtonProps {
+interface ReportButtonProps {
     onPositionChange: (positions: string[]) => void;
     options: string[];
 }
@@ -23,7 +23,7 @@ const StyledButton = styled.button`
     cursor: pointer;
 `
 
-export const RapportoButton: FC<RapportoButtonProps> = ({ onPositionChange, options }) => {
+export const ReportButton: FC<ReportButtonProps> = ({ onPositionChange, options }) => {
     return (
         <ButtonContainer>
             <StyledButton onClick={() => onPositionChange(options)}>

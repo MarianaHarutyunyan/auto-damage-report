@@ -7,7 +7,7 @@ import { circles } from '../constants/circles';
 import { Loading } from './Loading';
 import { CarImage } from './CarImage';
 import { Circle } from './Circle';
-import { RapportoButton } from './RapportoButton';
+import { ReportButton } from './ReportButton';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -40,7 +40,7 @@ export const CarDamage: FC<ApplicationConfigsOptions> = ({ initializedOptions, o
                         handleCircleClick={handleCircleClick} />
                 )
             })}
-            <RapportoButton onPositionChange={onPositionChange} options={options} />
+            <ReportButton onPositionChange={onPositionChange} options={options} />
         </Container>
     )
 };
